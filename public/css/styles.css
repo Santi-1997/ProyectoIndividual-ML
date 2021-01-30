@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*General*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    
+}
+
+div.banner img{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+    margin:  auto;
+}
+
+h2{
+    font-size:24px ;
+    min-width: 290px;
+}
+
+/*Header*/
+
+.main-header{
+    background-color: #EAC926;
+}
+
+.logo{
+    width: 50%;
+    margin:20px 20px;
+}
+
+.main-navbar{
+    font-size: 14px;
+    display: none;
+    padding-bottom: 15px;
+}
+
+.main-navbar ul{
+    list-style: none;
+}
+
+.main-navbar a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.burger{
+    text-align: center;
+    display: block;
+}
+
+.burger i{
+    background-color: #03264C;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+}
+
+nav{
+    display: none;
+}
+
+h3{
+    font-weight: 400;
+}
+
+.search{
+    width: 50%;
+    max-width: 200px;
+}
+
+
+
+/*Main*/
+
+main{
+    margin:0 auto;
+    width: 90%;
+}
+
+.main-article{
+    border-top:solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+    font-size: 16px;
+    width: 70%;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    display: none;
+    
+}
+
+article{
+    margin:10px 0px;
+    text-align: left;
+}
+
+main section article{
+    background-color: #fff;
+}
+
+
+
+main section article i,
+.descuento{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px; 
+}
+
+main section article img{
+    width: 100%;
+}
+
+/*Footer*/
+
+.icon i{    
+    color:  #03264C;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+footer{
+    margin: 0px 5px;
+}
+
+.footer{
+    text-align: center;
+    margin: auto;
+
+}
+
+.main-header-top-bar{
+    margin:0 10px
+}
+
+/*registro*/
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.check{
+    margin-left: 20px;
+}
+
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.boton-formulario{
+    background-color: #03264C;
+    border: none;
+    font-size: 20px;
+    color:#FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+form{
+    padding:10px 10px;
+
+}
+
+
+@media (min-width: 361px){
+    
+    
+    h4{
+        display: block;
+    }
+    
+
+    
+    .shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+        main section div.producto{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+    .precio{
+        width: 50%;
+    }
+    
+    .descuento{
+        width: 50%;
+        
+    }
+
+    main section div.producto article{
+        width: 45%;
+    }
+
+    
+}
+
+
+
+@media (min-width: 769px){
+    .burger{
+        display: none;
+    }
+    
+    .shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    h4{
+        display: block;
+    }
+
+    nav{
+        display: block;
+    }
+    
+    main section div.producto article{
+        width: 22%;
+    }
+
+
+    .main-header-top-bar{
+       padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    
+    .hamburguer-button{
+        display: none;
+    }
+    
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 0 10px;
+    }
+
+    .logo{
+        width: 200px;
+        margin:20px 20px;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+    }
+
+    .copy-header{
+        margin: 0px;
+        max-width: none;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .main-navbar{
+        margin-top: 40px;
+    }
+
+    .main-navbar li{
+        margin: 0 10px;
+    }
+
+    .main-navbar a{
+        font-size: 19px;
+    }
+
+    .logo{
+        width: 200px;
+        margin:20px 20px;
+    }
+}

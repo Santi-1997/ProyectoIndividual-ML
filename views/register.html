@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Register</title>
     <script src="https://kit.fontawesome.com/a07cc7b390.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
                         </ul>
     
                         <ul>
-                            <li><a href="/registro">Creá tu cuenta <i class="far fa-id-card"></i></a></li> 
+                            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li> 
                             <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                             <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                         </ul>
@@ -45,10 +45,10 @@
     
     </header>
 
-    <form action="/crear-producto" method="POST" class="create-form">
+    <form action="/register" method="POST" class="create-form">
         <div class="control-formulario">
           <label for="nombreyapellido">Nombre y apellido: </label>
-          <input id="nombreyapellido" type="text" name="nombreyapellido" class="control">
+          <input id="nombreyapellido" type="text" minlength="5" name="name" class="control">
         </div>
     
         <div class="control-formulario">
@@ -80,10 +80,16 @@
         <div class="control-formulario">
           <label>Categoría de interés: </label>
           <input type="checkbox" value="Electro" class="check"> Electro
+          <br>
           <input type="checkbox" value="Moda" class="check"> Moda
+          <br>
           <input type="checkbox" value="Hogar" class="check"> Hogar
+          <br>
           <input type="checkbox" value="Jugueteria" class="check"> Juguetería
+          <br>
           <input type="checkbox" value="Vida sana" class="check"> Vida sana
+          <br>
+      
         </div>
 
         <div class="control-formulario">
@@ -93,18 +99,43 @@
 
         <div class="control-formulario">
             <label>Contraseña: </label>
-            <input type="password" name="contrasenia" class="control" required>
+            <input type="password" name="password" class="control" required>
           </div>
 
           <div class="control-formulario">
             <label>Confirmar contraseña: </label>
-            <input type="text" name="confirmacion" class="control" required>
+            <input type="text" name="pass_confirm" class="control" required>
           </div>
 
         <button type="reset" class="boton-formulario">Borrar</button>
+        <br>
         <button type="submit"class="boton-formulario">Enviar</button>
     
         
       </form>
+
+      <footer>
+        <section class="footer">
+            <div class="icon"><i class="fas fa-credit-card"></i></div>
+            <h2>Pagá con tarjeta o en efectivo</h2>
+            <p>Con Mercado Liebre Cash, Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.¡Y siempre es seguro!</p>
+        </section>
+
+        <section class="footer">
+            <div class="icon"><i class="fas fa-gift"></i></div>
+            <h2>Envío gratis desde $2500</h2>
+            <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+
+        <section class="footer"> 
+            <div class="icon"><i class="fas fa-user-shield"></i></div>
+            <h2>Seguridad, de principio a fin</h2>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+        </section>
+
+        <P>Copyright © 1999-2020 MercadoLiebre S.R.L.</P>
+        
+       
+    </footer>
 </body>
 </html>

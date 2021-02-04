@@ -5,6 +5,7 @@
 }
 
 
+
 /*General*/
 
 body{
@@ -35,7 +36,7 @@ h2{
 
 .logo{
     width: 50%;
-    margin:20px 20px;
+    
 }
 
 .main-navbar{
@@ -80,6 +81,12 @@ h3{
     width: 100%;
     max-width: 200px;
     height: 20px;
+    margin-right: 5px;
+}
+
+.form-search{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -110,7 +117,7 @@ main{
     width: 70%;
 }
 
-h4{
+.descripcion{
     font-size: 16px;
     font-weight: normal;
     color: #666;
@@ -125,6 +132,7 @@ article{
 
 main section article{
     background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 
@@ -152,6 +160,10 @@ main section article img{
     width: 100%;
 }
 
+.main-article h4{
+
+}
+
 /*Footer*/
 
 .icon i{    
@@ -163,7 +175,8 @@ main section article img{
 }
 
 footer{
-    margin: 0px 5px;
+    margin: 15px 5px;
+    margin-bottom: 15px;
 }
 
 .footer{
@@ -173,61 +186,118 @@ footer{
 }
 
 .main-header-top-bar{
-    margin:0 10px
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
 
 /*register*/
-.control-formulario{
-    margin-bottom: 15px;
+.form-registro {
+    margin: auto;
+    max-width: 700px;
+    padding: 20px 0;
 }
 
-.control-formulario label{
-    margin-bottom: 5px;
-    font-style: italic;
+.form-registro div {
+    margin: 15px;
+}
+
+.form-registro label {
     display: block;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.check{
-    margin-left: 20px;
-}
-
-.control{
+.form-registro input {
     width: 100%;
-    padding: 8px 8px;
+    border: solid #03264C 1px;
+    outline: none;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-.boton-formulario{
-    background-color: #03264C;
+.form-registro h3 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.form-registro button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background-color:#03264C;
     border: none;
-    font-size: 20px;
-    color:#FFF;
-    padding: 5px 10px;
-    border-radius: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.perfil{
+    width: 2%;
 
 }
 
-form{
-    padding:10px 10px;
 
+
+/*login*/
+main .form {
+    margin: auto;
+    max-width: 700px;
+    padding: 20px 0;
+}
+
+main .form div {
+    margin: 15px;
+}
+
+main .form label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .form input {
+    width: 100%;
+    border: solid #03264C 1px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.form h2,
+.form p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background-color:#03264C;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.form a {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #03264C;
+    text-align: center;
 }
 
 
 @media (min-width: 361px){
     
-    
-    h4{
+    .descripcion{
         display: block;
     }
     
-
-    
-    .shadow{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
     
     nav{
         display: block;
@@ -260,17 +330,12 @@ form{
 
 
 @media (min-width: 769px){
+    
     .burger{
         display: none;
     }
     
-    .shadow{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    h4{
-        display: block;
-    }
+    
 
     nav{
         display: block;
@@ -285,6 +350,7 @@ form{
        padding: 20px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     
     .copy-header{
@@ -311,9 +377,9 @@ form{
 
     .logo{
         width: 200px;
-        margin:20px 20px;
+        padding: 15px ;
     }
-
+             
 }
 
 
@@ -353,5 +419,54 @@ form{
     .logo{
         width: 200px;
         margin:20px 20px;
+    }
+
+    .descripcion{
+        display: none;
+    }
+    
+    .form-search{
+        width: none;
+    }
+
+    main section article:hover .descripcion{
+        display: block;
+    }
+    
+
+    main section article{
+        box-shadow: none;
+    }
+
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+    
+    main section article i{
+        transition: transform 1000ms;
+    }
+
+    main section article:hover i{
+        transform: rotateZ(-90deg);
+    } 
+
+    footer section i{
+        text-decoration: none;
+        color: #1259c3;
+    
+    }
+    
+    footer section i:hover{
+        color: #EAC926
+    }
+
+    .d-flex{
+        display: flex !important;
+    }
+
+    .footer{
+        margin-bottom: 20px;
     }
 }

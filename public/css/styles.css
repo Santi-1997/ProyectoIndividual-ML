@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/*helpers#/
+
+.d-flex{
+    display:flex;
+}
+
+.justin
 
 
 /*General*/
@@ -78,7 +85,7 @@ h3{
 }
 
 .search{
-    width: 100%;
+    width: 200px;
     max-width: 200px;
     height: 20px;
     margin-right: 5px;
@@ -189,6 +196,7 @@ footer{
     padding:10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -209,6 +217,7 @@ footer{
     padding-bottom: 10px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+    display:flex ;
 }
 
 .form-registro input {
@@ -235,7 +244,8 @@ footer{
 }
 
 .perfil{
-    width: 2%;
+    width: 14%;
+    display: block;
 
 }
 
@@ -291,6 +301,9 @@ main .form input {
     text-align: center;
 }
 
+.form button:hover{
+    background-color:#0022AA
+}
 
 @media (min-width: 361px){
     
@@ -323,7 +336,6 @@ main .form input {
     main section div.producto article{
         width: 45%;
     }
-
     
 }
 
@@ -354,7 +366,7 @@ main .form input {
     }
     
     .copy-header{
-        max-width: 350px;
+        max-width: 300px;
         text-align: right;
     }
     
@@ -379,8 +391,11 @@ main .form input {
         width: 200px;
         padding: 15px ;
     }
-             
+
+  
 }
+             
+
 
 
 @media (min-width: 1200px){
@@ -425,9 +440,7 @@ main .form input {
         display: none;
     }
     
-    .form-search{
-        width: none;
-    }
+  
 
     main section article:hover .descripcion{
         display: block;
@@ -459,7 +472,7 @@ main .form input {
     }
     
     footer section i:hover{
-        color: #EAC926
+        color: #f19f07
     }
 
     .d-flex{

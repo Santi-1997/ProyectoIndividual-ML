@@ -29,4 +29,6 @@ app.post('/',(req,res)=>{
 });
 
 
-app.listen(3030, () => console.log ('esto fue exitoso'));
+app.listen(process.env.PORT || 3000, function(){
+    console.log("servidor corriendo en el puerto 3000")
+})

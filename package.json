@@ -2,7 +2,7 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "master": "app.js",
   "scripts": {
     "start": "nodemon app"
   },

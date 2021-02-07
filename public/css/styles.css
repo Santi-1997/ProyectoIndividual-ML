@@ -85,17 +85,18 @@ h3{
 }
 
 .search{
-    width: 200px;
-    max-width: 200px;
+    width: 50%;
     height: 20px;
     margin-right: 5px;
 }
 
+
 .form-search{
     display: flex;
     align-items: center;
+    width: 50%;
+    justify-content: flex-end;
 }
-
 
 
 /*Main*/
@@ -168,7 +169,7 @@ main section article img{
 }
 
 .main-article h4{
-
+    
 }
 
 /*Footer*/
@@ -189,7 +190,7 @@ footer{
 .footer{
     text-align: center;
     margin: auto;
-
+    
 }
 
 .main-header-top-bar{
@@ -246,7 +247,7 @@ footer{
 .perfil{
     width: 14%;
     display: block;
-
+    
 }
 
 
@@ -316,14 +317,14 @@ main .form input {
         display: block;
     }
     
-        main section div.producto{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
+    main section div.producto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
     .precio{
         width: 50%;
     }
@@ -332,10 +333,11 @@ main .form input {
         width: 50%;
         
     }
-
+    
     main section div.producto article{
         width: 45%;
     }
+    
     
 }
 
@@ -348,7 +350,7 @@ main .form input {
     }
     
     
-
+    
     nav{
         display: block;
     }
@@ -392,13 +394,23 @@ main .form input {
         padding: 15px ;
     }
 
-  
+    .search{
+        width: 200px;
+    }
+
+    .form-search{
+        display: flex;
+        align-items: center;
+        width: 31%;
+        justify-content: center;
+    }
+
 }
              
 
 
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
     .main-header-top-bar, .main-navbar{
         max-width: 1200px;
         margin: auto;
@@ -419,9 +431,6 @@ main .form input {
         font-weight: 400;
     }
 
-    .main-navbar{
-        margin-top: 40px;
-    }
 
     .main-navbar li{
         margin: 0 10px;
@@ -482,4 +491,9 @@ main .form input {
     .footer{
         margin-bottom: 20px;
     }
+
+    .search{
+        width: 300px;
+    }
 }
+

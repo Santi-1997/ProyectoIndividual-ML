@@ -6,6 +6,7 @@ const bodyParser = require ('body-parser');
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true}));
+app.use(express.json());
 
 
 app.get('/', (req,res) =>{
@@ -18,6 +19,10 @@ app.get('/register', (req,res) =>{
 
 app.get('/login', (req,res) =>{
     res.sendFile (path.resolve('views/login.html'))
+});
+
+app.post('/login', (req,res) =>{
+    res.send(req.body)
 });
 
 app.post('/register',(req,res)=>{
